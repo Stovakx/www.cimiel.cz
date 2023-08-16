@@ -1,0 +1,7 @@
+footer{
+    color: rgb(154,138,120);
+}
+.adresaCol>svg, .emailCol>svg, .telefonCol>svg{
+    font-size: 30px;
+    
+}
