@@ -10,48 +10,66 @@ const Footer = ()=>{
     
     return(
         <React.StrictMode>
-            <footer>
-                <Container fluid className="mt-5">
+            <footer className="mt-5">
+                <Container fluid className="pt-5">
                     <Row>
-                        <Col xs="12" md="4" className="">
+                        <Col xs="12" lg="5" className="ps-5">
                             <Row>
-                                <Col>
-                                    <h2 className="text-center text-md-start">Kontaktuj te nás</h2>
+                                <Col className="ps-5">
+                                    <h2>Kontaktuj te nás</h2>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col xs="2" className="pe-0 text-center adresaCol">
+                                <Col xs="12" lg="2" className="pe-0 text-center adresaCol">
                                     <PiHouseLineLight/>
                                 </Col>
-                                <Col xs="10">
-                                    <p className="mb-0">Husova 8<br/>
-                                        602 00 BRNO 
+                                <Col xs="12" lg="10">
+                                    <p className="text-center text-lg-start mb-0">Čepí 12<br/>
+                                        533 32, Čepí 
                                     </p>
                                 </Col>
                             </Row>
                             <Row className="mt-2"> 
-                                <Col xs="2" className="emailCol pe-0 text-center">
+                                <Col xs="12" lg="2" className="emailCol pe-0 text-center">
                                     <HiOutlineMail/>
                                 </Col>
-                                <Col xs="10" >
-                                    <p>example@example.com</p>
+                                <Col xs="12" lg="10" >
+                                    <p className="text-center text-lg-start">cimiel@email.cz</p>
                                 </Col>
                             </Row>
                             <Row>                              
-                                <Col xs="2" className="telefonCol pe-0 text-center">
+                                <Col xs="12" lg="2" className="telefonCol pe-0 text-center">
                                     <BsTelephone/>
                                 </Col>
-                                <Col xs="10">
-                                    <p> +420 654 123 657</p>
+                                <Col xs="12" lg="10">
+                                    <p className="text-center text-lg-start"> +420 774 317 215</p>
                                 </Col>
                             </Row>
                         </Col>
-                        <Col className="d-flex align-items-end justify-content-end">
-                            <Row >
-                                <Col>
-                                   <p>Vytvořeno: <a href="https://stovakx.github.io/personal_webpage/">Robin Palatáš</a> <br/></p>
-                                </Col>
-                            </Row>
+                        <Col xs="12" lg="7">
+                            <form >
+                                <div className="inputBox1">
+                                    <input type="email" required/>
+                                    <span className="email">Email</span>
+                                </div>
+
+                                <div className="inputBox">
+                                    <input type="telephone" required/>
+                                    <span>telefonní číslo</span>
+                                </div>
+
+                                <div className="inputBox">
+                                    <textarea type="text" required/>
+                                    <span>Zpráva</span>
+                                </div>
+
+                                <button className="enter">Enter</button>
+                            </form>
+                        </Col>                            
+                    </Row>
+                    <Row >
+                        <Col>
+                            <p className="text-center">Vytvořeno: <a href="https://stovakx.github.io/personal_webpage/">Robin Palatáš</a> <br/></p>
                         </Col>
                     </Row>
                 </Container>

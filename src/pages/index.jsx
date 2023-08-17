@@ -2,8 +2,9 @@ import React from 'react';
 import { Col, Row, Container, Card, } from 'react-bootstrap';
 import {GiPuzzle, GiGreekTemple} from 'react-icons/gi';
 import {BsBricks, BsFillLightningFill} from 'react-icons/bs'
-import IMG4 from '../assets/images/img4.webp';
+import Gallery from '../components/gallery';
 import '../assets/css/index.css';
+
 
 
 const IndexPage = ()=>{
@@ -101,15 +102,14 @@ const IndexPage = ()=>{
             <Container className='mt-5 technologyContainer'>
                 <Row>
                     <Col>
-                        <h2 className='text-center'>Používané technologie</h2>
+                        <h2 className='text-center'>Certifikace</h2>
                     </Col>
                 </Row>
                 <Row className='d-flex justify-content-center mt-2  gy-3'>
                     <Col xs="12" md="6" lg="4" className='cardCol'>
                         <Card>
-                            <Card.Img variant='top' src={IMG4}/>
                             <Card.Body>
-                                <Card.Title>Jméno technologi</Card.Title>
+                                <Card.Title>Certifikát č.</Card.Title>
                                 <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                             quis nostrud exercitation</Card.Text>
@@ -118,9 +118,8 @@ const IndexPage = ()=>{
                     </Col>
                     <Col xs="12" md="6" lg="4" className='cardCol'>
                         <Card>
-                            <Card.Img variant='top' src={IMG4}/>
                             <Card.Body>
-                                <Card.Title>Jméno technologi</Card.Title>
+                                <Card.Title>Certifikát č.</Card.Title>
                                 <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                             quis nostrud exercitation</Card.Text>
@@ -129,9 +128,8 @@ const IndexPage = ()=>{
                     </Col>
                     <Col xs="12" md="6" lg="4" className='cardCol'>
                         <Card>
-                            <Card.Img variant='top' src={IMG4}/>
                             <Card.Body>
-                                <Card.Title>Jméno technologi</Card.Title>
+                                <Card.Title>Certifikát č.</Card.Title>
                                 <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                             quis nostrud exercitation</Card.Text>
@@ -140,18 +138,37 @@ const IndexPage = ()=>{
                     </Col>
                     <Col xs="12" md="6" lg="4" className='cardCol'>
                         <Card>
-                            <Card.Img variant='top' src={IMG4}/>
                             <Card.Body>
-                                <Card.Title>Jméno technologi</Card.Title>
+                                <Card.Title>Certifikát č.</Card.Title>
                                 <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                             quis nostrud exercitation</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    
+                    <Col xs="12" md="6" lg="4" className='cardCol'>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>Certifikát č.</Card.Title>
+                                <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col xs="12" md="6" lg="4" className='cardCol'>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>Certifikát č.</Card.Title>
+                                <Card.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                            quis nostrud exercitation</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>    
                 </Row>
             </Container>
+            <Gallery/>
         </React.StrictMode>
     )
 }

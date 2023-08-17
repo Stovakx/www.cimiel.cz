@@ -4,10 +4,14 @@
     background-color: rgb(38,38,38);
 }
 .navbar-toggler{
-    color: white;
+    color: rgb(154,138,120);
 }
 .nav-link{
-    color: white;
+    color: rgb(154,138,120);
+}
+
+.navbar-brand{
+    color: rgb(154,138,120);
 }
 
 @media only screen and (max-width: 991px){ 
