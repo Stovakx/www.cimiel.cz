@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 import {Container, Row, Col, } from 'react-bootstrap';
 import {PiHouseLineLight} from 'react-icons/pi';
 import {HiOutlineMail} from 'react-icons/hi'
@@ -6,17 +7,28 @@ import {BsTelephone} from 'react-icons/bs'
 import '../assets/css/footer.css';
 
 const Footer = ()=>{
-    
+    const form = useRef()
+    const sendEmail = (e)=>{
+        e.preventDefault();
+        //change email to client
+        emailjs.sendForm('service_m4jnha7', 'template_m0pmdgr', form.current, 'BMEa4fAyy2FLRT6bH')
+        .then((result)=>{
+            console.log(result.text);
+            e.target.reset();
+        }, (error) =>{
+            console.log(error.text);
+        })
+    }
     
     return(
         <React.StrictMode>
             <footer className="mt-5">
                 <Container fluid className="pt-5">
                     <Row>
-                        <Col xs="12" lg="5" className="ps-5">
+                        <Col xs="12" lg="5" className="ps-5 my-4 my-lg-0">
                             <Row>
-                                <Col className="ps-5">
-                                    <h2>Kontaktuj te nás</h2>
+                                <Col className="ps-lg-4">
+                                    <h2 className="text-center text-lg-start">Kontaktuj te nás</h2>
                                 </Col>
                             </Row>
                             <Row>
@@ -46,8 +58,8 @@ const Footer = ()=>{
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs="12" lg="7">
-                            <form >
+                        <Col xs="12" lg="7" className="d-flex justify-content-center ">
+                            <form ref={form} onSubmit={sendEmail} >
                                 <div className="inputBox1">
                                     <input type="email" required/>
                                     <span className="email">Email</span>
@@ -69,7 +81,7 @@ const Footer = ()=>{
                     </Row>
                     <Row >
                         <Col>
-                            <p className="text-center">Vytvořeno: <a href="https://stovakx.github.io/personal_webpage/">Robin Palatáš</a> <br/></p>
+                            <p className="text-center">Vytvořeno: <a href="https://www.linkedin.com/in/robin-palat%C3%A1%C5%A1-8b28ba133/">Robin Palatáš</a> <br/></p>
                         </Col>
                     </Row>
                 </Container>

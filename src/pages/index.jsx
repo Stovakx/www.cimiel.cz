@@ -33,12 +33,12 @@ const IndexPage = ()=>{
                                 Naše služby
                             </h3>
                             <ul>
-                                <li>první</li>
-                                <li>ipsum</li>
-                                <li>Loren</li>
-                                <li>dolor</li>
-                                <li>consectetur</li>
-                                <li>adipiscin consectetur eli</li>
+                                <li>Pokládání kabelů</li>
+                                <li>Celková kompletace elektroinstalací</li>
+                                <li>Zásuvky a vypínače</li>
+                                <li>Podlahové topení</li>
+                                <li>Hromosvody</li>
+                                <li>Světla</li>
                             </ul>
                         </Col>
                 </Row>
@@ -88,10 +88,9 @@ const IndexPage = ()=>{
                             O nás
                         </h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Jsme tým profesionálů s dlouholetou zkušeností v oboru elektroinstalací. 
+                        Naše služby zahrnují široké spektrum elektrických prací, ať už jde o domácí elektroinstalace nebo komplexní projekty pro průmyslové prostory. 
+                        Společně s námi můžete mít jistotu kvalitního provedení a bezpečnosti vašich elektrických systémů.
                         </p>
                     </Col>
                     <Col xs="12" md="6" className='aboutUsImg'>
