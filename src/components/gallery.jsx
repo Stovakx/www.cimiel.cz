@@ -18,17 +18,15 @@ const Gallery = ()=>{
       fetchImages();
     }, []);
     return(
-        <React.StrictMode>
-            <Container className="galleryContainer ">
-                <LazyLoad threshold={0.95}>    
-                    <div className="image-grid">
-                        {imagePaths.map((imagePath, index) => (
-                        <img key={index} src={imagePath} alt='Project photo' loading="lazy" />
-                        ))}
-                    </div>
-                </LazyLoad>
-            </Container>
-        </React.StrictMode>
+        <Container className="galleryContainer ">
+            <LazyLoad threshold={0.95}>    
+                <div className="image-grid">
+                    {imagePaths.map((imagePath, index) => (
+                    <img key={index} src={imagePath} alt='Project photo' loading="lazy" />
+                    ))}
+                </div>
+            </LazyLoad>
+        </Container>
     )
 }
 export default Gallery

@@ -1,6 +1,5 @@
-
-const getGalleryPhotos = async()=>{
-    const photos = import.meta.glob(`/public/gallery/*.*`);
+const getGalleryPhotos = async () => {
+  const photos = import.meta.glob(`/src/assets/gallery/*.*`);
 
   const photoPaths = Object.keys(photos);
 

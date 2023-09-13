@@ -18,7 +18,7 @@ const IndexPage = ()=>{
                 </Row>
                 <Row>
                     <Col className='mt-3 mx-4'>
-                        <p className='heroText'>Lorem ipsum dolor sit amet, consectetur adipiscing eli.
+                        <p className='heroText'>Profesionální pokládání kabelů a kompletní elektrické řešení pro domy, byty a průmyslové prostory.
                         </p>
                     </Col>
                 </Row>

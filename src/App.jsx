@@ -7,14 +7,11 @@ import IndexPage from './pages/index';
 function App() {
   return (
     <React.StrictMode>
-      <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<IndexPage />} /> {/* Use "element" prop */}
-          {/* Add more routes using the same pattern */}
+          <Route path="/" element={<IndexPage />} />
         </Routes>
         <Footer/>
-      </Router>
     </React.StrictMode>
   );
 }
