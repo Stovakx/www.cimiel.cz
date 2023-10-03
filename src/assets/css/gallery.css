@@ -36,6 +36,10 @@ img {
     left: 97%;
     font-size: 22px;
 }
+.carousel .thumbs-wrapper{
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (max-device-width:1199px) {
     .image-grid{
@@ -55,6 +59,10 @@ img {
 @media only screen and (max-device-width:768px) {
     .image-grid{
         grid-template-columns: repeat(2, 200px);
+    }
+
+    .galleryBtn{
+        font-size: x-large;
     }
 }
 
